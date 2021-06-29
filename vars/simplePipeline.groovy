@@ -48,7 +48,7 @@ def call() {
                             writeFile file: 'test-results.txt', text:'Release up to date'
                             sh 'cat test-results.txt'
                         }
-                        showDate()
+                        
                     }
 
                 }
@@ -56,7 +56,4 @@ def call() {
         }
     }
 
-    String showDate() {
-        sh 'date'
-    }
 }
